@@ -4,5 +4,168 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.custom-padding{
+    padding: 15px;
+}
+
+header .top-header-right ul li a i{
+        font-size: 18px;
+        background: gray;
+        padding: 10px;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        color: white;
+}
+
+header .top-header-right ul li a:hover i{
+    background: #4CAF50;
+}
+
+header .top-header-right ul li .btn{
+  background-color: #004A94;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* main header  */
+header .main-header .navbar .navbar-brand img{
+    width: 150px;
+}
+
+header .main-header .navbar .navbar-nav .nav-item .nav-link{
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header .main-header .navbar .navbar-nav .nav-item .btn{
+    color: #ffffff;
+    padding: 17px 50px;
+    background-color: #004A94;
+    font-weight: bold;
+    font-size: 18px;
+}
+@keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ইমেজ জুম এফেক্ট */
+  .slider-img {
+    animation: zoomEffect 20s ease-in-out infinite;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  @keyframes zoomEffect {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* স্লাইডার কনটেন্টের জন্য স্টাইল */
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    animation: slideUp 1.5s ease-in-out; /* Smooth animation for content */
+    z-index: 2;
+    color: white;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Discover Now Button */
+  .carousel-caption a {
+    display: inline-block; /* বাটন সব সময় দৃশ্যমান */
+    margin-top: 20px;
+    background-color: #004A94;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    border-radius: 0; /* বাটনে রেডিয়াস থাকবে না */
+  }
+  
+  /* স্লাইডারের জন্য ওভারলে */
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* কালো ওভারলে */
+    z-index: 1;
+  }
+  
+  /* Previous & Next Button Style */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6); /* ডিফল্ট ব্যাকগ্রাউন্ড */
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Previous & Next Buttons Visible */
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Adjust the position and smooth appearance for content */
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* Make sure it stays centered vertically */
+    z-index: 2;
+  }
+  
+  /* Next and Previous buttons appear when hovering over the slider */
+  .carousel-item:hover .carousel-control-prev-icon,
+  .carousel-item:hover .carousel-control-next-icon {
+    background-color: #004A94; /* হোভার ব্যাকগ্রাউন্ড কালার */
+  }
+  
+  
+  
