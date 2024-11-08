@@ -7,13 +7,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-li{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    margin-right: 20px;
-}
 
 .custom-padding{
     padding: 15px;
@@ -69,7 +62,7 @@ header .main-header .navbar .navbar-nav .nav-item .btn{
     }
   }
   
-  /* ইমেজ জুম এফেক্ট */
+
   .slider-img {
     animation: zoomEffect 20s ease-in-out infinite;
     width: 100%;
@@ -86,14 +79,13 @@ header .main-header .navbar .navbar-nav .nav-item .btn{
     }
   }
   
-  /* স্লাইডার কনটেন্টের জন্য স্টাইল */
   .carousel-caption {
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
     text-align: left;
-    animation: slideUp 1.5s ease-in-out; /* Smooth animation for content */
+    animation: slideUp 1.5s ease-in-out;
     z-index: 2;
     color: white;
   }
@@ -110,9 +102,8 @@ header .main-header .navbar .navbar-nav .nav-item .btn{
     margin-bottom: 20px;
   }
   
-  /* Discover Now Button */
   .carousel-caption a {
-    display: inline-block; /* বাটন সব সময় দৃশ্যমান */
+    display: inline-block;
     margin-top: 20px;
     background-color: #004A94;
     font-weight: bold;
@@ -121,10 +112,10 @@ header .main-header .navbar .navbar-nav .nav-item .btn{
     font-size: 18px;
     transition: 0.3s ease;
     text-decoration: none;
-    border-radius: 0; /* বাটনে রেডিয়াস থাকবে না */
+    border-radius: 0; 
   }
   
-  /* স্লাইডারের জন্য ওভারলে */
+
   .carousel-item::before {
     content: "";
     position: absolute;
@@ -132,40 +123,109 @@ header .main-header .navbar .navbar-nav .nav-item .btn{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* কালো ওভারলে */
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
   
   /* Previous & Next Button Style */
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.6); /* ডিফল্ট ব্যাকগ্রাউন্ড */
+    background-color: rgba(0, 0, 0, 0.6); 
     border-radius: 50%;
     padding: 10px;
     transition: background-color 0.3s ease;
   }
-  
-  /* Previous & Next Buttons Visible */
+
   .carousel-control-prev,
   .carousel-control-next {
     opacity: 1;
     visibility: visible;
   }
   
-  /* Adjust the position and smooth appearance for content */
+
   .carousel-caption {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%; /* Make sure it stays centered vertically */
+    height: 100%;
     z-index: 2;
   }
   
-  /* Next and Previous buttons appear when hovering over the slider */
   .carousel-item:hover .carousel-control-prev-icon,
   .carousel-item:hover .carousel-control-next-icon {
-    background-color: #004A94; /* হোভার ব্যাকগ্রাউন্ড কালার */
+    background-color: #004A94; 
   }
   
   
+  /* about us section  */
+  .about-section{
+    margin-top: 100px;
+  }
+  .about-section h5{
+    color: #004A94;
+  }
+  .about-section p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.8;   
+  }
+  .about-section .about-img{
+    position: relative;
+  }
+
+  .about-section .about-img h3 {
+	color: #004A94;
+	font-weight: bold;
+	font-size: 28px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 41%;
+	left: r;
+	rotate: -90deg;
+	right: -147px;
+	padding: 10px 45px;
+}
+.about-section .about-img{
+    overflow: hidden;
+}
+.about-section .about-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.about-section .about-img:hover img{
+    transform: scale(1.1);
+}
+.about-section .about-content{
+    padding-left: 35px;
+}
+  .about-section ul {
+    padding-left: 20px;
+    color: #004A94;
+  }
   
+  .about-section ul li {
+    font-size: 28px;
+    line-height: 1.8;
+  }
+  
+  .about-section ul li p{
+    color: #000000;
+  }
+
+  .about-section .btn-1 a{
+    background-color: #004A94;
+    color: #ffffff;
+    padding: 18px 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+  }
